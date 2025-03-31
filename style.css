@@ -192,19 +192,6 @@ form input:user-invalid ~ .icon
     visibility: visible;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-/* Error end */
-
 form input 
 {
     padding-left: .8rem;
@@ -214,9 +201,6 @@ form input
     border-radius: 5px;
     width: 100%;
 }
-
-
-
 
 
 form input:focus
