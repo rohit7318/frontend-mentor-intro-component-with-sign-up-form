@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root
+{
+    /* ### Primary */
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    /* ### Accent */
+    --Blue: hsl(248, 32%, 49%);
+    /* ### Neutral */
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+
+    --box-shadow:0 3px 10px rgba(0, 0, 0, 1);
+}
+
+*,*::after,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body
+{
+    height: 100%;
+    width: 100%;
+    font-family: 'Poppins',sans-serif;
+}
+
+img,video,iframe
+{
+    max-inline-size:100%;
+    block-size:auto;
+}
+
+body 
+{
+    width: 100%;
+}
+
+
+button 
+{
+    border: none;
+}
+
+main 
+{
+    min-height: 100dvh;
+    width: 100%;
+    background-image: url('./images/bg-intro-mobile.png');
+    padding: 4rem 1.5rem 3rem 1.5rem;
+    text-align: center;
+    background-color: var(--Red);
+}
+
+.top 
+{
+    width: 100%;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.top h1 
+{
+    font-weight: bold;
+    color: var(white);
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 1.2rem;
+}
+
+.top p 
+{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+
+    font-weight: 300;
+    font-size: .9rem;
+    margin-bottom: 1.5rem;
+}
+
+.try-it-btn 
+{
+    background-color: var(--Blue);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 1.5rem 2.5rem;
+
+
+
+
+}
+
+.try-it-btn span 
+{
+    font-weight: 200;
+    font-size: smaller;
+
+}
+
+.try-it-btn,h1 , .top p 
+{
+    max-width: 400px;
+}
+
+
+form 
+{
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 2rem;
+    background-color: white;
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 1.2rem;
+}
+
+
+form input 
+{
+    padding-left: .8rem;
+    color: gray;
+    text-transform: capitalize;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: .8rem 1.5rem;
+    border-radius: 5px;
+}
+
+
+form button.claim-btn
+{
+    background-color: var(--Green);
+    color: white;
+    text-transform: uppercase;
+    padding: .9rem 0;
+    border-radius: 10px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+
+form p.para-small
+{
+    width: 90%;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: .8rem;
+    a 
+    {
+        color: red;
+        text-decoration: none;
+        font-weight: 500;
+
+    }
+}
+
+
+
+@media (min-width:800px)
+{
+    main 
+    {
+        padding: 5rem;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4rem;
+
+        
+        
+    }
+
+    .top 
+    {
+        max-width: 500px;
+        text-align: left;
+
+        display: flex;
+        flex-direction: column;
+        
+        h1 
+        {
+            text-align: left;
+            margin: 0 0 1rem 0;
+            width: 16ch;
+            font-size: 2.5rem;
+            line-height: 2.5rem;
+            
+        }
+        p 
+        {
+            text-align: left;
+            width: 100%;
+            line-height: 1.4;
+            margin: 0;
+        }
+    }
+
+    .try-it-btn
+    {
+        padding: 1rem 0;
+    }
+    form 
+    {
+        max-width: 400px;
+        margin-top: 1.5rem;
+    }
+    
+}
+
